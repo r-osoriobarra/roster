@@ -16,7 +16,7 @@ class Availability(models.Model):
 class Kitchen(models.Model):
     name = models.CharField(max_length=100)
     head_chef = models.CharField(max_length=100)
-    trading_hours = models.ForeignKey('TradingHours', on_delete=models.CASCADE)
+    trading_hours = models.ForeignKey('TradingHour', on_delete=models.CASCADE)
 
 
 class TradingHour(models.Model):
